@@ -39,8 +39,5 @@ Despite these limitations, SecureTrust-FL demonstrates the effectiveness of comb
 3.Bot-IoT:https://www.kaggle.com/datasets/gauravduttakiit/bot-iot
 
 
-**Reference links**
-1.CICIDS-2017: https://www.unb.ca/cic/datasets/ids-2017.html
-2.UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset
-3.Bot-IoT:https://research.unsw.edu.au/projects/bot-iot-dataset
+
 
