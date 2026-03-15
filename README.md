@@ -7,23 +7,31 @@ To further strengthen security and robustness, the model incorporates differenti
 
 **Key features include:**
 
-Federated learning architecture for decentralized IDS training
-Trust-weighted model aggregation to mitigate unreliable client updates
-Differential privacy mechanisms for enhanced data protection
-Adversarial robustness evaluation using FGSM attacks
-Cross-dataset intrusion detection performance analysis
-Comprehensive experimental evaluation with ablation studies
+Federated Learning (FL): Enables collaborative model training across multiple clients while preserving local data privacy.
+
+Trust-Weighted Aggregation (T-Krum): Reduces the impact of malicious or low-quality clients during model aggregation.
+
+Differential Privacy (DP): Protects gradients and model updates during federated training.
+
+Adversarial Training (FGSM): Improves robustness against evasion and adversarial attacks.
+
+Zero-Trust Client Selection: Ensures only trustworthy clients participate in model updates.
+
+Ledger-Auditable Architecture: Maintains transparency and traceability of training updates.
 
 The proposed approach improves security, privacy, and robustness of collaborative intrusion detection systems while maintaining high detection accuracy across diverse network datasets.
 
+**Goal**
+To build a privacy-preserving, robust, and auditable federated IDS capable of detecting modern cyber threats such as ransomware, DoS attacks, and IoT-based intrusions across heterogeneous network environments.
+
 **Outcomes of the project**
-Developed a Trust-Aware Federated Learning framework for distributed network intrusion detection without sharing raw data.
-Implemented trust-weighted model aggregation to evaluate and prioritize reliable client updates during federated training.
-Integrated privacy-preserving mechanisms using differential privacy to protect sensitive network data.
-Demonstrated robustness against adversarial attacks through FGSM-based adversarial evaluation.
-Achieved strong cross-dataset generalization performance across CICIDS2017, UNSW-NB15, and Bot-IoT datasets.
-Conducted ablation studies to analyze the contribution of trust scoring, privacy mechanisms, and robustness techniques.
-Provided comprehensive evaluation metrics including accuracy, balanced accuracy, macro F1-score, ROC-AUC, and adversarial robustness.
+This project proposes SecureTrust-FL, a privacy-preserving federated intrusion detection system designed for collaborative cybersecurity environments. The framework combines Federated Learning (FL) with a zero-trust security approach, allowing multiple organizations to jointly train intrusion detection models without sharing raw network traffic data, thereby maintaining data privacy.
+
+The system is evaluated using three widely used cybersecurity datasets: CICIDS2017, UNSW-NB15, and BoT-IoT. Experimental results show strong performance, achieving 98.6% accuracy and an F1-score close to 0.99, demonstrating that collaborative learning among heterogeneous clients improves intrusion detection capability and generalizes well across different network environments.
+
+However, the study also identifies several challenges in federated IDS systems. These include reduced performance for minority attack classes, vulnerability to adversarial perturbations, strict privacy constraints affecting model performance, and non-IID data distribution across clients.
+
+Despite these limitations, SecureTrust-FL demonstrates the effectiveness of combining federated learning with zero-trust security to build privacy-aware intrusion detection systems. Future work will focus on improving robustness against adversarial attacks, enhancing detection of minority attack classes using imbalance-aware learning, and supporting federated training under stronger privacy constraints.
 
 **Dataset links**
 1.CICIDS-2017: https://www.kaggle.com/datasets/cicdataset/cicids2017
